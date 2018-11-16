@@ -1,0 +1,15 @@
+{
+  "name": "npm-address-jig",
+  "version": "1.0.6",
+  "description": "Simple adress jigging",
+  "keywords": [
+    "address",
+    "jig"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reed Stewart",
+  "license": "ISC"
+}
