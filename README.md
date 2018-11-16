@@ -28,3 +28,5 @@ console.log(x);
 >> "Rd"
 >> "Plae"
 ```
+
+[Npm package](https://www.npmjs.com/package/npm-address-jig)
