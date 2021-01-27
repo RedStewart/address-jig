@@ -11,6 +11,10 @@ Address Jig is a simple package created to easily generate a random address suff
 - Avenue
 - Drive
 - Place
+- Court
+- Drive
+- Lane
+- Way
 
 ### Installation
 
