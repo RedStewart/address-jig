@@ -5,18 +5,21 @@ Address Jig is a simple package created to easily generate a random address suff
 ---
 
 ### Currently supports:
-  - Street
-  - Road
-  - Avenue
-  - Drive
-  - Place
+
+- Street
+- Road
+- Avenue
+- Drive
+- Place
 
 ### Installation
 
 ```sh
 $ npm install npm-address-jig
 ```
+
 ### Usage
+
 ```js
 var npmAddressJig = require("npm-address-jig");
 console.log(npmAddressJig.street());
@@ -29,4 +32,4 @@ console.log(x);
 >> "Plae"
 ```
 
-[Npm package](https://www.npmjs.com/package/npm-address-jig)
+[NPM package](https://www.npmjs.com/package/npm-address-jig)
