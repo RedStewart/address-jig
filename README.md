@@ -1,6 +1,6 @@
 # Address Jig
 
-Address Jig is a simple package created to easily generate a random address suffix for a specified address.
+Generate a random address suffix for a specified address suffix.
 
 ---
 
@@ -19,21 +19,23 @@ Address Jig is a simple package created to easily generate a random address suff
 ### Installation
 
 ```sh
-$ npm install npm-address-jig
+$ npm install address-jig
 ```
 
 ### Usage
 
 ```js
-var npmAddressJig = require("npm-address-jig");
-console.log(npmAddressJig.street());
-console.log(npmAddressJig.road());
-var x = npmAddressJig.place();
-console.log(x);
+import AddressJig from 'address-jig';
 
->> "Strt"
+console.log(AddressJig.drive());
+console.log(AddressJig.road());
+
+const place = AddressJig.place();
+console.log(place);
+
+>> "Driv"
 >> "Rd"
 >> "Plae"
 ```
 
-[NPM package](https://www.npmjs.com/package/npm-address-jig)
+[NPM package](https://www.npmjs.com/package/address-jig)

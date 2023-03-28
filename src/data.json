@@ -1,4 +1,5 @@
-const street = [
+{
+  "street": [
     "Street",
     "St",
     "Stret",
@@ -13,7 +14,7 @@ const street = [
     "Stree",
     "Strett"
   ],
-  road = [
+  "road": [
     "Road",
     "Rd",
     "Rod",
@@ -25,7 +26,7 @@ const street = [
     "Roaad",
     "Roadd"
   ],
-  place = [
+  "place": [
     "Place",
     "Pl",
     "Plce",
@@ -37,7 +38,7 @@ const street = [
     "Plaace",
     "Pllace"
   ],
-  avenue = [
+  "avenue": [
     "Avenue",
     "Ave",
     "Av",
@@ -49,7 +50,7 @@ const street = [
     "Avne",
     "Aveneu"
   ],
-  drive = [
+  "drive": [
     "Drive",
     "Dr",
     "Driv",
@@ -61,7 +62,7 @@ const street = [
     "Drivee",
     "Drrive"
   ],
-  court = [
+  "court": [
     "Court",
     "Crt",
     "Cort",
@@ -73,7 +74,7 @@ const street = [
     "Cuourt",
     "Cout"
   ],
-  lane = [
+  "lane": [
     "Lane",
     "Lne",
     "Lnae",
@@ -85,40 +86,5 @@ const street = [
     "Llane",
     "Lan"
   ],
-  way = ["Way", "Waay", "Wy", "Wayy", "Wway"];
-
-exports.street = () => {
-  return randomArrElement(street);
-};
-
-exports.road = () => {
-  return randomArrElement(road);
-};
-
-exports.place = () => {
-  return randomArrElement(place);
-};
-
-exports.avenue = () => {
-  return randomArrElement(avenue);
-};
-
-exports.drive = () => {
-  return randomArrElement(drive);
-};
-
-exports.court = () => {
-  return randomArrElement(court);
-};
-
-exports.lane = () => {
-  return randomArrElement(lane);
-};
-
-exports.way = () => {
-  return randomArrElement(way);
-};
-
-let randomArrElement = (arr) => {
-  return arr[Math.floor(Math.random() * arr.length)];
-};
+  "way": ["Way", "Waay", "Wy", "Wayy", "Wway"]
+}
