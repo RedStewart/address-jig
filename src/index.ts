@@ -1,7 +1,18 @@
 import * as data from './data.json';
 
+type TKeyword =
+  | 'street'
+  | 'road'
+  | 'place'
+  | 'avenue'
+  | 'drive'
+  | 'court'
+  | 'lane'
+  | 'way'
+  | undefined;
+
 class AddressJig {
-  static randomArrElement(array: string[]): string {
+  private static randomArrElement(array: string[]): string {
     return array[Math.floor(Math.random() * array.length)] as string;
   }
 
@@ -35,6 +46,32 @@ class AddressJig {
 
   static way(): string {
     return this.randomArrElement(data.way);
+  }
+
+  static get(address: string): string {
+    const keywords = [
+      'street',
+      'road',
+      'place',
+      'avenue',
+      'drive',
+      'court',
+      'lane',
+      'way',
+    ];
+
+    const validKeyword = keywords.find((keyword: string) =>
+      new RegExp(` ${keyword}`).test(address.toLowerCase())
+    ) as TKeyword;
+
+    if (!validKeyword) return address;
+
+    const jig = this[validKeyword]();
+
+    return address.replace(
+      ` ${validKeyword.charAt(0).toUpperCase() + validKeyword.slice(1)}`,
+      ` ${jig}`
+    );
   }
 }
 

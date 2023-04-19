@@ -33,9 +33,12 @@ console.log(AddressJig.road());
 const place = AddressJig.place();
 console.log(place);
 
+console.log(AddressJig.get('1 Beach Street'))
+
 >> "Driv"
 >> "Rd"
 >> "Plae"
+>> "1 Beach Strt"
 ```
 
 [NPM package](https://www.npmjs.com/package/address-jig)
