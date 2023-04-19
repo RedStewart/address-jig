@@ -73,6 +73,10 @@ class AddressJig {
       ` ${jig}`
     );
   }
+
+  static data() {
+    return data;
+  }
 }
 
 export default AddressJig;
